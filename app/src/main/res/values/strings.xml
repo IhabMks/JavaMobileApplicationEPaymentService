@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Intesy</string>
+    <string name="home_slogan">With Intesy\nInternet\nHas Never\nBeen Easier</string>
+
+    <string-array name="month_list">
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="year_list">
+        <item>2020</item>
+        <item>2021</item>
+        <item>2022</item>
+        <item>2023</item>
+        <item>2024</item>
+        <item>2025</item>
+        <item>2026</item>
+        <item>2027</item>
+        <item>2028</item>
+        <item>2029</item>
+        <item>2030</item>
+        <item>2031</item>
+        <item>2032</item>
+        <item>2033</item>
+        <item>2034</item>
+        <item>2035</item>
+    </string-array>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string-array name="recharge_amount">
+        <item>DATA 500DA</item>
+        <item>DATA 1000DA</item>
+        <item>DATA 2500DA</item>
+        <item>DATA 3500DA</item>
+        <item>DATA 6500DA</item>
+        <item>Pass 100DA</item>
+        <item>Pass 200DA</item>
+    </string-array>
+
+</resources>

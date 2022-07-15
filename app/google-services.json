@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "668996546130",
+    "firebase_url": "https://intesy-68ae2.firebaseio.com",
+    "project_id": "intesy-68ae2",
+    "storage_bucket": "intesy-68ae2.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:668996546130:android:f6f900335683371176b98b",
+        "android_client_info": {
+          "package_name": "com.example.intesy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "668996546130-4vt3cn7t09a1tks8s87p788h7qvhfu6h.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.intesy",
+            "certificate_hash": "7f5db04e7836fe724b718dd14878c1e3fe976315"
+          }
+        },
+        {
+          "client_id": "668996546130-cfdc7a1dpi6q678ajvggof7vmgmi8n9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBK9Axyrw-j7zTAG9E3Jg3CErw6rwfczNI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "668996546130-cfdc7a1dpi6q678ajvggof7vmgmi8n9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

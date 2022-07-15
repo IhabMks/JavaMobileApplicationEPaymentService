@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/person_using_smartphone_blurry">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_custom1"
+        android:alpha="0.5"
+        android:layout_margin="7.5dp">
+
+    </RelativeLayout>
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cross_icon"
+        android:foreground="@drawable/transparant_bg_circle"/>
+
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_button"
+        android:fontFamily="@font/montserrat"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-7.5dp"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+    <LinearLayout
+        android:id="@+id/entry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/login_tv"
+        android:layout_marginTop="175dp"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginEnd="7.5dp">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="NUMBER"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="30dp"
+            android:fontFamily="@font/montserrat"
+            android:drawableStart="@drawable/ic_phone_white_24dp"
+            android:drawablePadding="10dp"/>
+        <EditText
+            android:id="@+id/number_field"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:textColor="#FFFFFF"
+            android:maxLines="1"
+            android:ems="10"
+            android:maxLength="10"
+            android:layout_marginEnd="25dp"
+            android:inputType="phone"
+            android:hint="Enter number"
+            android:layout_marginStart="64dp"/>
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PASSWORD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="30dp"
+            android:autofillHints="lol"
+            android:layout_marginTop="8dp"
+            android:fontFamily="@font/montserrat"
+            android:drawableStart="@drawable/ic_lock_outline_white_24dp"
+            android:drawablePadding="10dp"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/ps_reveal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:src="@drawable/ps_visible" />
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        >
+        <Button
+            android:id="@+id/login_button_login_frag"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button_6"
+            android:fontFamily="@font/montserrat"
+            android:text="LOGIN"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_custom1"
+            android:textSize="25sp"
+            android:textStyle="normal"/>
+
+        <LinearLayout
+            android:id="@+id/new_user_ll_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:orientation="horizontal">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="NOT A MEMBER ? "
+                android:fontFamily="@font/montserrat"
+                android:textColor="#FFFFFFFF" />
+
+            <TextView
+                android:id="@+id/register_button_login_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="REGISTER"
+                android:textColor="#FFFFFFFF"
+                android:background="@drawable/underlined_text"
+                android:textStyle="bold"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<resources>
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/dark_custom1</item>
+        <item name="colorPrimaryDark">@color/dark_custom1</item>
+        <item name="colorAccent">@color/orange_custom_2</item>
+        <item name="android:colorControlNormal">#FFFFFF</item>
+        <item name="android:fontFamily">@font/montserrat</item>
+
+    </style>
+    <style name="MyCheckbox" parent="@style/Widget.AppCompat.CompoundButton.CheckBox">
+        <item name="android:colorControlNormal">#ffd600</item>
+        <item name="android:colorControlActivated">#0091ea</item>
+        <item name="android:colorControlHighlight">#c51162</item>
+        <item name="android:textAppearance">@style/TextAppearance.AppCompat</item>
+    </style>
+</resources>

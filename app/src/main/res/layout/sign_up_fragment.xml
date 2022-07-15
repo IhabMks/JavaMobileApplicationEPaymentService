@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/person_using_smartphone_blurry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7.5dp"
+        android:alpha="0.5"
+        android:background="@color/dark_custom1">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cross_icon"
+        android:foreground="@drawable/transparant_bg_circle"/>
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-7.5dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Register"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/steps_mod_1"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_below="@+id/login_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/somewords"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_tv"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/montserrat"
+        android:text="Try . Opportunity . Results"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/entry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_tv"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="7.5dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:drawableStart="@drawable/ic_perm_identity_white_24dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"
+
+            android:text="USERNAME"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/username_field"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="25dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:hint="Enter username"
+            android:inputType="text"
+            android:maxLength="25"
+            android:maxLines="1"
+            android:textColor="#FFFFFF" />
+
+        <View
+            android:id="@+id/username_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_phone_white_24dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="NUMBER"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/phone_field"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="25dp"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/montserrat"
+            android:hint="Enter number"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:maxLines="1"
+            android:textColor="#FFFFFF" />
+
+        <View
+            android:id="@+id/number_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/key"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="CLIENT CODE"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/client_code_field"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:ems="30"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter your client code"
+                android:inputType="number"
+
+                android:maxLines="1"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/client_code_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:background="@null"
+                android:src="@drawable/info" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/client_code_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" />
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:drawableStart="@drawable/ic_lock_outline_white_24dp"
+            android:drawablePadding="10dp"
+            android:fontFamily="@font/montserrat"
+            android:text="PASSWORD"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/password_field"
+                android:layout_width="225dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="64dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/montserrat"
+                android:hint="Enter password"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:textColor="#FFFFFF" />
+
+            <ImageButton
+                android:id="@+id/ps_reveal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="2"
+                android:background="@null"
+                android:src="@drawable/ps_visible" />
+        </LinearLayout>
+
+        <View
+            android:id="@+id/password_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#FFFFFF" />
+
+        <Spinner
+            android:id="@+id/account_type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginTop="8.5dp"
+            android:layout_marginEnd="16dp"
+            android:layout_weight="1"
+            android:popupBackground="@color/dark_custom1" />
+
+        <View
+            android:id="@+id/spinner_line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="11dp"
+            android:background="#FFFFFF" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/register_button_signup_frag"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button_6"
+            android:fontFamily="@font/montserrat"
+            android:text="REGISTER"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_custom1"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/already_user_ll_register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="ALREADY A MEMBER ? "
+                android:textColor="#FFFFFFFF" />
+
+            <TextView
+                android:id="@+id/login_button_signup_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underlined_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:text="LOGIN"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

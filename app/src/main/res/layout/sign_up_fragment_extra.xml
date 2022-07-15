@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/person_using_smartphone_blurry">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="7.5dp"
+        android:alpha="0.5"
+        android:background="@color/dark_custom1">
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/back_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/cross_icon"
+        android:foreground="@drawable/transparant_bg_circle"/>
+
+    <TextView
+        android:id="@+id/login_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/back_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-7.5dp"
+        android:fontFamily="@font/montserrat"
+        android:text="Verification"
+        android:textColor="#FFFFFF"
+        android:textSize="50sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/steps_mod_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_tv"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="30dp"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/entry_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/login_tv"
+        android:layout_marginStart="7.5dp"
+        android:layout_marginTop="175dp"
+        android:layout_marginEnd="7.5dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/v_c_field"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:ems="6"
+            android:fontFamily="@font/montserrat"
+            android:hint="Verification code"
+            android:inputType="number"
+            android:maxLines="1"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp" />
+
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="7dp"
+            android:background="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/wrong_code_popup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:text="Wrong verification code."
+            android:textColor="@color/majenta_custom"
+            android:textStyle="bold"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/submit_button_extra_frag"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_button_6"
+            android:fontFamily="@font/montserrat"
+            android:onClick="log_in_button_home_fct"
+            android:text="SUBMIT"
+            android:textAllCaps="false"
+            android:textColor="@color/dark_custom1"
+            android:textSize="25sp"
+            android:textStyle="normal" />
+
+        <LinearLayout
+            android:id="@+id/already_user_ll_extra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/montserrat"
+                android:text="ALREADY A MEMBER ? "
+                android:textColor="#FFFFFFFF" />
+
+            <TextView
+                android:id="@+id/login_button_extra_frag"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/underlined_text"
+                android:clickable="true"
+                android:focusable="true"
+                android:fontFamily="@font/montserrat"
+                android:onClick="signup_login_signin_frag_button"
+                android:text="LOGIN"
+                android:textColor="#FFFFFFFF"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:background="@color/dark_custom1"
+        android:id="@+id/sign_up_fragment_extra">
+        <ImageButton
+            android:id="@+id/back_button"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@null"
+            android:src="@drawable/ic_arrow_back_white_24dp"
+            android:onClick="login_frag_back_button_fct"/>
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Verification\ncode"
+            android:layout_marginStart="35dp"
+            android:layout_marginTop="30dp"
+            android:textColor="#FFFFFF"
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:layout_below="@+id/back_button"/>
+
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/back_button">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/v_c_field"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Verification code"
+                    android:textColorHint="#FFFFFF"
+                    android:drawablePadding="5dp"
+                    android:paddingBottom="15dp"
+                    android:drawableStart="@drawable/ic_lock_outline_white_24dp"
+                    android:maxLines="1"
+                    android:inputType="phone"
+                    android:textColor="@color/orange_custom_2"/>
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/wrong_code_popup"
+                android:text="Wrong verification code."
+                android:layout_gravity="center"
+                android:textColor="@color/majenta_custom"
+                android:layout_marginTop="3dp"
+                android:textStyle="bold"
+                android:visibility="invisible"/>
+            <Button
+                android:id="@+id/submit_sign_up"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Submit"
+                android:textStyle="bold"
+                android:textColor="#FFFFFF"
+                android:textAllCaps="false"
+                android:layout_marginTop="55dp"
+                android:textSize="25sp"
+                android:background="@drawable/custom_button_4" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:id="@+id/already_user_ll_sign_extra">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not the first time here? "
+                    android:textColor="#FFFFFFFF"
+                    android:layout_gravity="center"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Sign in"
+                    android:clickable="true"
+                    android:textColor="@color/light_blue_custom2"
+                    android:textAllCaps="false"
+                    android:textStyle="bold"
+                    android:focusable="true"
+                    android:onClick="signin_button_signup_frag_fct"/>
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>-->

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rotate xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fromDegrees="270"
+    android:toDegrees="270">
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Drop Shadow Stack -->
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <stroke android:color="#FBAA0A" android:width="1dp"  />
+            <corners android:radius="35dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <stroke android:color="#FBAA0C" android:width="1dp" />
+            <corners android:radius="34dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <stroke android:color="#FBAA0E" android:width="1dp" />
+            <corners android:radius="33dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <stroke android:color="#F8A810" android:width="1dp" />
+            <corners android:radius="32dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <stroke android:color="#FAAA12" android:width="1dp" />
+            <corners
+                android:radius="31dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+
+            <stroke android:color="#F8AA15" android:width="1dp" />
+            <corners
+                android:radius="30dp"/>
+        </shape>
+    </item>
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <stroke android:color="#F1A615" android:width="1dp" />
+            <corners
+                android:radius="30dp"/>
+        </shape>
+    </item>
+
+    <!-- Background -->
+    <item>
+        <shape
+            android:shape="ring"
+            android:innerRadiusRatio="2.5"
+            android:thickness="10dp"
+            android:useLevel="true">
+            <solid android:color="@color/orange_custom_2"/>
+
+
+        </shape>
+    </item>
+</layer-list>
+</rotate>
